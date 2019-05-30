@@ -2033,8 +2033,7 @@ img.pull-right {
     top: 0;
     width: 100%;
     height: 100%;
-    content: '';
-    background: rgba(0, 0, 0, 0.65); }
+    content: ''; }
   .ts-book-seat:after {
     position: absolute;
     left: 0;
@@ -2052,7 +2051,7 @@ img.pull-right {
     .ts-book-seat .book-seat-content .section-title {
       margin-bottom: 40px; }
     .ts-book-seat .book-seat-content p {
-      color: #fff;
+      color: #000;
       margin-bottom: 20px; }
 
 /*====================================
@@ -2063,7 +2062,7 @@ img.pull-right {
 
 .ts-newsletter {
   padding: 55px 0 60px;
-  background: #fff582;
+  background: #fff;
   position: absolute;
   width: 100%;
   z-index: 1; }
@@ -2128,27 +2127,44 @@ img.pull-right {
 .ts-footer-social ul {
   padding: 0; }
   .ts-footer-social ul li {
+    position: relative;
     display: inline-block;
+    z-index: 1;
     list-style: none; }
-    .ts-footer-social ul li a {
+    .ts-footer-social-link {
       display: block;
       height: 40px;
       width: 40px;
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -ms-border-radius: 50%;
-      border: 1px solid #525164;
+      border: 1px solid #000;
       text-align: center;
-      color: #fff;
+      color: #000;
       font-size: 14px;
       padding: 7px 0;
       margin: 0 5px; }
-      .ts-footer-social ul li a:hover {
-        background: #e7015e;
-        border-color: #e7015e;
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg); }
+      .ts-footer-social-link:hover {
+        color: #000;
+      }
+      .ts-footer-social ul li:before {
+        position: absolute;
+        left: -3px;
+        top: 3px;
+        background: #fff582;
+        content: '';
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -ms-border-radius: 50%;
+        bottom: 0;
+        width: 40px;
+        right: 0;
+        height: 40px;
+        z-index: -1;
+      }
+      .ts-footer-social ul li:hover:before {
+        background: #fff;
+      }
 
 .footer-menu ul li {
   display: inline-block; }
