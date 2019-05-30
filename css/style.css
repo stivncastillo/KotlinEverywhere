@@ -258,28 +258,45 @@ img.pull-right {
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-  background: #64d6f9;
+  /* background: #64d6f9; */
   height: 50px;
   padding: 0 35px;
   line-height: 50px;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -ms-border-radius: 3px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -ms-border-radius: 0px;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   outline: none;
+  position:relative;
   text-decoration: none;
+  border: 1px solid #000;
   cursor: pointer; }
+  .btn:before {
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    background: #64d6f9;
+    content: '';
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    height: 50px;
+    z-index: -1;
+    display: inline-block;
+    padding: 0 35px;
+  }
   .btn:focus {
     outline: none; }
   .btn:hover {
     color: #fff;
-    background: #5ecce5;
+    /* background: #5ecce5;
     -webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15); }
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);  */
+  }
   .btn.fill {
     background: transparent;
     padding: 0 25px;
@@ -455,7 +472,7 @@ img.pull-right {
     height: 40px;
     line-height: 40px;
     padding: 0px 25px;
-    background: #00c1c1;
+    /* background: #00c1c1; */
     margin-left: 30px; }
     .header ul.navbar-nav > li.header-ticket .ticket-btn:hover {
       background: #e7015e; }
@@ -517,12 +534,17 @@ img.pull-right {
   .header.header-classic ul.navbar-nav > li.active > a {
     color: #e7015e; }
   .header.header-classic ul.navbar-nav > li.header-ticket .ticket-btn {
-    background: #64d6f9;
+    background: transparent !important;
     color: #fff; }
+    .header.header-classic ul.navbar-nav > li.header-ticket .ticket-btn:before {
+      left: -5px;
+      top: 5px;
+      height: 40px;
+      padding: 0 25px;
+    }
     .header.header-classic ul.navbar-nav > li.header-ticket .ticket-btn:hover {
       -webkit-box-shadow: none;
-      box-shadow: none;
-      background: #5ecce5; }
+      box-shadow: none; }
 
 .header.sticky {
   position: fixed;
@@ -2987,10 +3009,10 @@ faq-item
 
 /*------------back to top-------------*/
 .BackTo {
-  background: #e7015e none repeat scroll 0 0;
+  background: #fff582 none repeat scroll 0 0;
   border-radius: 50%;
   bottom: 35px;
-  color: #979797;
+  color: #000;
   cursor: pointer;
   height: 44px;
   position: fixed;
@@ -3001,7 +3023,7 @@ faq-item
   display: block;
   padding: 8px 0; }
   .BackTo a {
-    color: #fff;
+    color: #000;
     font-size: 20px;
     font-weight: 700;
     margin-top: 2px; }
