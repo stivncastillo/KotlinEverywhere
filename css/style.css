@@ -301,6 +301,7 @@ img.pull-right {
     border: solid 1px #fff;
     z-index: 1 !important;
     color: #000;
+    margin-top: 30px;
   }
   .sponsor-btn > .btn:before {
     background: #fff582;
@@ -1479,7 +1480,7 @@ img.pull-right {
         display: block;
         padding: 20px 50px;
         position: relative; }
-        .ts-schedule-nav ul li a:before {
+        /* .ts-schedule-nav ul li a:before {
           width: 0;
           height: 0;
           border-style: solid;
@@ -1494,7 +1495,7 @@ img.pull-right {
           transition: all 0.4s ease;
           -webkit-transition: all 0.4s ease;
           -moz-transition: all 0.4s ease;
-          -ms-transition: all 0.4s ease; }
+          -ms-transition: all 0.4s ease; } */
         .ts-schedule-nav ul li a h3 {
           font-size: 24px;
           font-weight: 400;
@@ -1502,10 +1503,10 @@ img.pull-right {
           margin-bottom: 0;
           text-transform: capitalize; }
         .ts-schedule-nav ul li a.active {
-          background: #e7015e;
-          color: #fff; }
+          background: #fff582;
+          color: #000; }
           .ts-schedule-nav ul li a.active h3 {
-            color: #fff; }
+            color: #000; }
           .ts-schedule-nav ul li a.active:before {
             opacity: 1; }
 
@@ -1892,8 +1893,8 @@ img.pull-right {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
-  .ts-intro-sponsors .sponsors-logo img {
-    margin: 0 38px 50px; }
+  /* .ts-intro-sponsors .sponsors-logo img {
+    margin: 0 38px 50px; } */
 
 /*==========================
       map direction
