@@ -298,7 +298,7 @@ img.pull-right {
     box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);  */
   }
   .sponsor-btn > .btn {
-    border: solid 1px #fff;
+    border: solid 1px #000;
     z-index: 1 !important;
     color: #000;
     margin-top: 30px;
