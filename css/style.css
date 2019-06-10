@@ -1431,6 +1431,9 @@ img.pull-right {
     margin-bottom: 0; }
   .schedule-listing.launce .schedule-slot-info-content img {
     float: right; }
+    .schedule-listing.launce .schedule-slot-info-content p {
+      float: left;
+      margin-top: 10px;  }
 
 .schedule-listing-btn {
   text-align: center;
